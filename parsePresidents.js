@@ -5,10 +5,7 @@ const $ = require('cheerio');
 const potusParse = function (url) {
     return rp(url)
         .then(function (html) {
-            return {
-                name: $('.firstHeading', html).text(),
-                birthday: $('.bday', html).text(),
-            };
+            console.log($('h1',html))
         })
         .catch(function (err) {
             //handle error
