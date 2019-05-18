@@ -1,0 +1,29 @@
+{
+  "name": "nodejs_scraper",
+  "version": "1.0.0",
+  "description": "Webscraper in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanwildemeerschBrent/NodeJS_Scraper.git"
+  },
+  "keywords": [
+    "scraper",
+    "node.js"
+  ],
+  "author": "Brent Vanwildemeersch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanwildemeerschBrent/NodeJS_Scraper/issues"
+  },
+  "homepage": "https://github.com/VanwildemeerschBrent/NodeJS_Scraper#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^1.16.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
