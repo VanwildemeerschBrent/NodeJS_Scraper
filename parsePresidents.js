@@ -1,19 +1,18 @@
+
 const rp = require('request-promise');
 const $ = require('cheerio');
 
-
-const presidentParse = function (url){
-    rp(url)
-        .then((html) => {
+const potusParse = function (url) {
+    return rp(url)
+        .then(function (html) {
             return {
                 name: $('.firstHeading', html).text(),
-                birthDay: $('.bday', html).text()
-            }
+                birthday: $('.bday', html).text(),
+            };
         })
-        .catch((error) => {
-            console.log('Error', error);
+        .catch(function (err) {
+            //handle error
         });
-}
+};
 
-
-module.exports= presidentParse;
+module.exports = potusParse;
